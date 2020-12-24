@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/image/hieu.JPG);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(29,33,61,.5);
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+.logo{
+    width: 155px;
+}
+.logo img{
+    width: 55px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+.navbar nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.user{
+    display: flex;
+    align-items: center;
+   
+}
+.user img{
+    width: 50px;
+    cursor: pointer;
+    margin-left: 15px;
+    border-radius: 40px;
+}
+.user p{
+    color: #ff6b3f;
+}
+.sidebar{
+    width: 155px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(20, 21, 48, 0.2)
+}
+.search-icon{
+    width: 40px;
+    display: block;
+    text-align: center;
+    margin: 100px auto 0;
+}
+.social-links{
+    width:40px;
+    height: 300px;
+    display: block;
+    margin: 220px auto 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.social-links a{
+    margin: 30px 6px;
+    
+}
+.social-links img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.infor-icon{
+    width: 20px;
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.msg-container{
+    width: 600px;
+    height: 280px;
+    position: absolute;
+    top: 57%;
+    left: 14%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+#slider{
+    display: inline-flex; /*show in colum*/
+    transition: 0.5s;
+}
+.msg-col{
+    width: 600px;
+    height: 280px;
+}
+.msg-col h1{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+.msg-col p{
+    color: #ddd;
+    font-size: 15px;
+    line-height: 25px;
+}
+.msg-col a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background: #ff6b3f;
+    border-radius: 50px;
+    padding: 10px 35px;
+    margin-top: 25px;
+}
+.controller{ /*vertical line on right side*/
+    width: 1px;
+    height: 320px;
+    display: block;
+    background: #c0c0c0;
+    position: absolute;
+    top: 55%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+#line1,  #line2, #line3, #line4{
+    height: 80px;
+    width: 10px;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+#active{
+    width: 5px;
+    height: 80px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    top: 0;
+    transform: translateX(-50%);
+    transition: 0.5s ease all;
+}

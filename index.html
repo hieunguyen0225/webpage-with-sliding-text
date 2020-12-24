@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A webpage with sliding text| NHH</title>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width" , initial-scale=1.0>
+    <link rel="stylesheet"
+        href="/redirect?Id=%2f3LUyFeMv%2bWjNf2pJ%2fgqJjcWdiwHc2aG7zzlg%2f5MfyvNj6xx10lsfnDn80zpO7PLs14VBVJbFEGoKybJi0GTYA%3d%3d">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/image//logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="user">
+                <p>NGUYEN HUY HIEU</p>
+                <img src="/image/user.jpg" alt="">
+            </div>
+
+            <div class="sidebar">
+                <img src="/image/search.png" class="search-icon">
+                <div class="social-links">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <img src="/image/info.png" class="infor-icon">
+            </div>  
+        </div>
+
+        <div class="msg-container">
+            <div id="slider">
+                <div class="msg-col">
+                    <h1>The reasoning</h1>
+                    <p>
+                        HTML is the standard markup language for Web pages.
+                        With HTML you can create your own Website.
+                        HTML is easy to learn - You will enjoy it!</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div class="msg-col">
+                    <h1>The knowledge</h1>
+                    <p>
+                        HTML is the standard markup language for Web pages.
+                        With HTML you can create your own Website.
+                        HTML is easy to learn - You will enjoy it!</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div class="msg-col">
+                    <h1>The intergration</h1>
+                    <p>
+                        HTML is the standard markup language for Web pages.
+                        With HTML you can create your own Website.
+                        HTML is easy to learn - You will enjoy it!</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div class="msg-col">
+                    <h1>The learning</h1>
+                    <p>
+                        HTML is the standard markup language for Web pages.
+                        With HTML you can create your own Website.
+                        HTML is easy to learn - You will enjoy it!</p>
+                        <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controller">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+            <div id="line4"></div>
+            <div id="active"></div>
+        </div>
+    </div>
+
+
+<script>
+    var slider= document.getElementById('slider');
+    var active= document.getElementById('active');
+    var line1= document.getElementById('line1');
+    var line2= document.getElementById('line2');
+    var line3= document.getElementById('line3');
+    var line4= document.getElementById('line4');
+
+    line1.onclick= function(){
+        slider.style.transform= 'translateX(0%)';
+        active.style.top='0px';
+    }
+    line2.onclick= function(){
+        slider.style.transform= 'translateX(-25%)';
+        active.style.top='80px';
+    }
+    line3.onclick= function(){
+        slider.style.transform= 'translateX(-50%)';
+        active.style.top='180px';
+    }
+    line4.onclick= function(){
+        slider.style.transform= 'translateX(-75%)';
+        active.style.top='240px';
+    }
+</script>
+
+
+</body>
+</html>
